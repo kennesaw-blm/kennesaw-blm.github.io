@@ -72,6 +72,7 @@ header.kennesaw {
 
 .center-img {
     background: black;
+    color: white;
     height: 100%;
 
     img {
@@ -82,6 +83,19 @@ header.kennesaw {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .formore {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        text-align: center;
+
+        @media screen and (max-width: $phone) {
+            font-size: 1rem;
+        }
     }
 }
 
